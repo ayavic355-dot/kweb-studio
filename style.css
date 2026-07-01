@@ -115,6 +115,25 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
+/* MENU MOBILE */
+
+.menu-toggle {
+    display: none;
+    background: #2f7df6;
+    color: white;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.mobile-only {
+    display: none;
+}
+
 /* HERO PC */
 
 .hero {
@@ -630,14 +649,55 @@ footer {
         border-radius: 35px;
     }
 
-    nav ul,
     .nav-btn {
         display: none;
     }
 
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 88px;
+        left: 0;
+        right: 0;
+        background: rgba(5, 8, 22, 0.96);
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 24px;
+        padding: 22px;
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+        backdrop-filter: blur(14px);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .mobile-only a {
+        display: inline-block;
+        background: #2f7df6;
+        color: white;
+        padding: 14px 24px;
+        border-radius: 30px;
+    }
+
     .logo img {
-        width: 115px;
-        height: 46px;
+        width: 135px;
+        height: 54px;
         object-fit: contain;
     }
 
@@ -668,7 +728,7 @@ footer {
     }
 
     .hero-title {
-        font-size: 38px;
+        font-size: 35px;
         line-height: 1.15;
         letter-spacing: -1px;
         margin-bottom: 34px;
@@ -681,15 +741,7 @@ footer {
     }
 
     .heart-line {
-        display: block;
-        left: 215px;
-        top: 142px;
-        width: 125px;
-        height: 42px;
-    }
-
-    .heart-line path {
-        stroke-width: 5;
+        display: none;
     }
 
     .hero-description {
@@ -810,7 +862,7 @@ footer {
 
 @media (max-width: 390px) {
     .hero-title {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .hero-description {
@@ -818,8 +870,8 @@ footer {
     }
 
     .logo img {
-        width: 105px;
-        height: 42px;
+        width: 120px;
+        height: 48px;
     }
 
     .language-switcher button {
@@ -827,14 +879,13 @@ footer {
         font-size: 11px;
     }
 
-    section h2 {
-        font-size: 28px;
+    .menu-toggle {
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
     }
 
-    .heart-line {
-        left: 190px;
-        top: 138px;
-        width: 115px;
-        height: 40px;
+    section h2 {
+        font-size: 28px;
     }
 }
