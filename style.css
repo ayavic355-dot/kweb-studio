@@ -593,44 +593,97 @@ footer {
 @media (max-width: 650px) {
     nav {
         width: 94%;
-        min-height: 75px;
+        min-height: 82px;
         top: 12px;
-        padding: 0 20px;
+        padding: 0 18px;
+        border-radius: 35px;
+    }
+
+    nav ul,
+    .nav-btn {
+        display: none;
     }
 
     .logo img {
         width: 120px;
         height: 48px;
+        object-fit: contain;
+    }
+
+    .language-switcher {
+        margin-left: auto;
+        gap: 8px;
     }
 
     .language-switcher button {
-        padding: 6px 9px;
-        font-size: 12px;
+        padding: 8px 11px;
+        font-size: 13px;
+        border-radius: 18px;
     }
 
     .hero {
-        padding: 140px 6% 60px;
+        min-height: 100vh;
+        padding: 145px 6% 55px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    .content {
+        max-width: 100%;
     }
 
     .hero-title {
-        font-size: 40px;
+        font-size: 42px;
+        line-height: 1.15;
         letter-spacing: -1px;
-        margin-bottom: 35px;
+        margin-bottom: 32px;
+    }
+
+    .hero-title .line-1,
+    .hero-title .line-2 {
+        display: inline;
     }
 
     .heart-line {
-        left: 210px;
-        top: 95px;
-        width: 145px;
-        height: 55px;
-    }
-
-    .heart-line path {
-        stroke-width: 5;
+        display: none;
     }
 
     .hero-description {
-        font-size: 17px;
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 42px;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+        padding: 18px 22px;
+        font-size: 16px;
+        border-radius: 14px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        background: transparent;
+        border: none;
+        overflow: visible;
+        max-width: 100%;
+    }
+
+    .stat-box {
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.055);
+        padding: 24px;
     }
 
     .about,
@@ -643,19 +696,32 @@ footer {
         padding: 70px 6%;
     }
 
+    section h2 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .section-description {
+        font-size: 17px;
+        line-height: 1.8;
+        margin-bottom: 40px;
+    }
+
     .about-box {
         padding: 25px;
     }
 
-    .stats,
     .cards,
     .why-grid,
     .steps {
         grid-template-columns: 1fr;
     }
 
-    section h2 {
-        font-size: 33px;
+    .card,
+    .why-box,
+    .step,
+    .contact-box {
+        padding: 28px;
     }
 
     .realisation-image-box {
