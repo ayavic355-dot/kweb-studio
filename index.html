@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWeb Studio - Création de sites web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="KWeb Studio Logo">
+        </div>
+
+        <ul>
+            <li><a href="#accueil" id="navAccueil">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services" id="navServices">Services</a></li>
+            <li><a href="#realisations" id="navRealisations">Réalisations</a></li>
+            <li><a href="#solutions" id="navSolutions">Solutions</a></li>
+            <li><a href="#contact" id="navContact">Contact</a></li>
+        </ul>
+
+        <div class="language-switcher">
+            <button onclick="setLanguage('fr')">FR</button>
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('nl')">NL</button>
+        </div>
+
+        <a class="nav-btn" id="navDevis" href="https://wa.me/32466127866?text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20web%20pour%20mon%20activit%C3%A9." target="_blank">
+            Demander un devis
+        </a>
+    </nav>
+
+    <section class="hero" id="accueil">
+        <div class="content">
+
+            <h1 class="hero-title">
+                <span class="line-1" id="heroTitle1">Création de sites web</span>
+                <br>
+                <span class="line-2" id="heroTitle2">modernes & performants</span>
+
+                <svg class="heart-line" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+                    <path d="
+                        M20 150
+                        C180 155, 360 145, 500 70
+                        C540 45, 575 40, 595 85
+                        C615 35, 685 40, 675 110
+                        C665 165, 605 190, 570 220
+                        C530 175, 500 130, 500 95
+                        C500 65, 535 45, 570 80
+                        C610 125, 650 185, 720 225
+                        C770 255, 820 270, 870 245
+                    " />
+                </svg>
+            </h1>
+
+            <p class="hero-description" id="heroDescription">
+                Des sites vitrines, boutiques en ligne et applications web
+                sur mesure pour développer votre présence en ligne.
+            </p>
+
+            <div class="hero-buttons">
+                <a id="heroWhatsapp" href="#services">
+                    Découvrir nos services
+                </a>
+
+                <a id="heroProjects" href="#realisations" class="btn-outline">
+                    Voir nos réalisations
+                </a>
+            </div>
+
+            <div class="stats">
+                <div class="stat-box">
+                    🌐
+                    <strong id="stat1Title">100%</strong>
+                    <span id="stat1Text">Sites modernes</span>
+                </div>
+
+                <div class="stat-box">
+                    🛡️
+                    <strong id="stat2Title">Sécurisés</strong>
+                    <span id="stat2Text">Protection assurée</span>
+                </div>
+
+                <div class="stat-box">
+                    🚀
+                    <strong id="stat3Title">Rapides</strong>
+                    <span id="stat3Text">Performance top</span>
+                </div>
+
+                <div class="stat-box">
+                    🎧
+                    <strong id="stat4Title">Accompagnement</strong>
+                    <span id="stat4Text">Après livraison</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>À propos de KWeb Studio</h2>
+
+        <p class="section-description">
+            KWeb Studio accompagne les petits commerces, indépendants, restaurants,
+            salons et boutiques dans la création de sites web modernes, clairs et adaptés au mobile.
+            L’objectif est simple : vous aider à être visible en ligne et à recevoir plus de contacts.
+        </p>
+
+        <div class="about-box">
+            <p>
+                Je crée des sites vitrines, catalogues et e-commerce simples selon vos besoins.
+                Chaque projet est réalisé avec attention : design professionnel, version mobile,
+                boutons WhatsApp, présentation claire de vos services et accompagnement après livraison.
+            </p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 id="servicesTitle">Mes services</h2>
+
+        <p class="section-description" id="servicesDesc">
+            Des sites simples, professionnels et adaptés à votre activité.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3 id="service1Title">💻 Site vitrine</h3>
+                <p id="service1Text">
+                    Un site professionnel pour présenter votre activité,
+                    vos services, vos horaires, votre adresse et vos contacts.
+                </p>
+
+                <ul>
+                    <li id="service1Li1">Page d’accueil</li>
+                    <li id="service1Li2">Présentation des services</li>
+                    <li id="service1Li3">Contact WhatsApp</li>
+                    <li id="service1Li4">Google Maps</li>
+                    <li id="service1Li5">Version mobile</li>
+                </ul>
+
+                <a href="#contact" class="card-btn" id="service1Btn">Demander un devis</a>
+            </div>
+
+            <div class="card">
+                <h3 id="service2Title">🛒 Site catalogue</h3>
+                <p id="service2Text">
+                    Un site pour afficher vos produits, prix et promotions,
+                    avec un bouton WhatsApp pour recevoir les commandes.
+                </p>
+
+                <ul>
+                    <li id="service2Li1">Produits</li>
+                    <li id="service2Li2">Prix et promotions</li>
+                    <li id="service2Li3">Catégories</li>
+                    <li id="service2Li4">Photos produits</li>
+                    <li id="service2Li5">Commande via WhatsApp</li>
+                </ul>
+
+                <a href="#contact" class="card-btn" id="service2Btn">Demander un devis</a>
+            </div>
+
+            <div class="card">
+                <h3 id="service3Title">🛍️ Site e-commerce simple</h3>
+                <p id="service3Text">
+                    Un site plus complet pour vendre en ligne avec produits,
+                    espace client, paiement PayPal et base de données.
+                </p>
+
+                <ul>
+                    <li id="service3Li1">Produits</li>
+                    <li id="service3Li2">Panier</li>
+                    <li id="service3Li3">Paiement PayPal</li>
+                    <li id="service3Li4">Espace client</li>
+                    <li id="service3Li5">Base de données</li>
+                </ul>
+
+                <a href="#contact" class="card-btn" id="service3Btn">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="realisations" id="realisations">
+        <h2 id="realisationsTitle">Mes réalisations</h2>
+
+        <p class="section-description" id="realisationsDesc">
+            Quelques exemples de projets réalisés.
+        </p>
+
+        <div class="realisation-image-box">
+            <img src="images/realisations.jpg" alt="Mes réalisations">
+        </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+        <h2 id="solutionsTitle">Des solutions adaptées à votre projet</h2>
+
+        <p class="section-description" id="solutionsDesc">
+            Chaque projet est différent. Le prix dépend du nombre de pages,
+            des fonctionnalités demandées et du contenu à intégrer.
+            Contactez-moi pour recevoir un devis gratuit et clair.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3 id="solution1Title">Site vitrine</h3>
+                <p id="solution1Text">
+                    Idéal pour présenter votre activité et permettre aux clients
+                    de vous contacter facilement.
+                </p>
+                <a href="#contact" class="card-btn">Demander un devis</a>
+            </div>
+
+            <div class="card">
+                <h3 id="solution2Title">Site catalogue</h3>
+                <p id="solution2Text">
+                    Idéal pour montrer vos produits, vos prix, vos promotions
+                    et recevoir des commandes via WhatsApp.
+                </p>
+                <a href="#contact" class="card-btn">Demander un devis</a>
+            </div>
+
+            <div class="card">
+                <h3 id="solution3Title">Site e-commerce</h3>
+                <p id="solution3Text">
+                    Idéal pour vendre en ligne avec paiement, espace client
+                    et gestion des produits.
+                </p>
+                <a href="#contact" class="card-btn">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="why">
+        <h2 id="whyTitle">Pourquoi travailler avec moi ?</h2>
+
+        <div class="why-grid">
+            <div class="why-box">
+                <h3 id="why1Title">💰 Prix accessibles</h3>
+                <p id="why1Text">Des prix adaptés aux petits commerces et indépendants.</p>
+            </div>
+
+            <div class="why-box">
+                <h3 id="why2Title">✨ Design moderne</h3>
+                <p id="why2Text">Un site propre, clair et professionnel qui inspire confiance.</p>
+            </div>
+
+            <div class="why-box">
+                <h3 id="why3Title">📱 Responsive</h3>
+                <p id="why3Text">Votre site fonctionne sur téléphone, tablette et ordinateur.</p>
+            </div>
+
+            <div class="why-box">
+                <h3 id="why4Title">🎧 Accompagnement</h3>
+                <p id="why4Text">Je vous explique comment utiliser votre site après livraison.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <h2 id="processTitle">Comment se déroule le projet ?</h2>
+
+        <div class="steps">
+            <div class="step">
+                <span>1</span>
+                <h3 id="step1Title">Discussion</h3>
+                <p id="step1Text">Vous m’expliquez votre activité et vos besoins.</p>
+            </div>
+
+            <div class="step">
+                <span>2</span>
+                <h3 id="step2Title">Proposition</h3>
+                <p id="step2Text">Je vous propose une structure, un délai et un devis clair.</p>
+            </div>
+
+            <div class="step">
+                <span>3</span>
+                <h3 id="step3Title">Création</h3>
+                <p id="step3Text">Je crée le site et je vous montre l’avancement.</p>
+            </div>
+
+            <div class="step">
+                <span>4</span>
+                <h3 id="step4Title">Livraison</h3>
+                <p id="step4Text">Après validation, je vous livre le site et je vous explique son utilisation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 id="contactTitle">Discutons de votre projet</h2>
+
+        <p class="section-description" id="contactDesc">
+            Vous avez besoin d’un site web pour votre activité ?
+            Envoyez-moi un message et je vous répondrai rapidement.
+        </p>
+
+        <div class="contact-box">
+            <a class="whatsapp-btn" id="contactWhatsapp" href="https://wa.me/32466127866?text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20web%20pour%20mon%20activit%C3%A9." target="_blank">
+                Me contacter sur WhatsApp
+            </a>
+
+            <p>📧 Email : contact@kwebstudio.be</p>
+        </div>
+    </section>
+
+    <footer>
+        <p id="footerText">KWeb Studio — Création de sites web pour petits commerces et indépendants.</p>
+        <p>© 2026 KWeb Studio. Tous droits réservés.</p>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/32466127866?text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20web." target="_blank">
+        WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
