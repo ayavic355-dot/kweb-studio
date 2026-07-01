@@ -561,7 +561,7 @@ footer {
     .hero {
         padding: 160px 6% 70px;
         background-size: cover;
-        background-position: center top;
+        background-position: 58% top;
     }
 
     .hero-title {
@@ -661,7 +661,7 @@ footer {
         padding: 140px 6% 55px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: 58% top;
     }
 
     .content {
@@ -669,10 +669,11 @@ footer {
     }
 
     .hero-title {
-        font-size: 39px;
+        font-size: 38px;
         line-height: 1.15;
         letter-spacing: -1px;
-        margin-bottom: 30px;
+        margin-bottom: 34px;
+        position: relative;
     }
 
     .hero-title .line-1,
@@ -681,7 +682,15 @@ footer {
     }
 
     .heart-line {
-        display: none;
+        display: block;
+        left: 215px;
+        top: 142px;
+        width: 125px;
+        height: 42px;
+    }
+
+    .heart-line path {
+        stroke-width: 5;
     }
 
     .hero-description {
@@ -823,5 +832,12 @@ footer {
 
     section h2 {
         font-size: 28px;
+    }
+
+    .heart-line {
+        left: 190px;
+        top: 138px;
+        width: 115px;
+        height: 40px;
     }
 }
