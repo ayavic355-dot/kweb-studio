@@ -7,6 +7,7 @@ const translations = {
         navSolutions: "Solutions",
         navContact: "Contact",
         navDevis: "Demander un devis",
+        navDevisMobile: "Demander un devis",
 
         heroTitle1: "Création de sites web",
         heroTitle2: "modernes & performants",
@@ -106,6 +107,7 @@ const translations = {
         navSolutions: "Solutions",
         navContact: "Contact",
         navDevis: "Request a quote",
+        navDevisMobile: "Request a quote",
 
         heroTitle1: "Website creation",
         heroTitle2: "modern & powerful",
@@ -205,6 +207,7 @@ const translations = {
         navSolutions: "Oplossingen",
         navContact: "Contact",
         navDevis: "Offerte aanvragen",
+        navDevisMobile: "Offerte aanvragen",
 
         heroTitle1: "Websites maken",
         heroTitle2: "modern & performant",
@@ -313,4 +316,26 @@ function setLanguage(lang) {
 document.addEventListener("DOMContentLoaded", () => {
     const savedLanguage = localStorage.getItem("siteLanguage") || "fr";
     setLanguage(savedLanguage);
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+
+            if (navMenu.classList.contains("active")) {
+                menuToggle.textContent = "×";
+            } else {
+                menuToggle.textContent = "☰";
+            }
+        });
+
+        navMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+                menuToggle.textContent = "☰";
+            });
+        });
+    }
 });
