@@ -14,13 +14,19 @@
             <img src="logo.jpg" alt="KWeb Studio Logo">
         </div>
 
-        <ul>
+        <ul id="navMenu">
             <li><a href="#accueil" id="navAccueil">Accueil</a></li>
             <li><a href="#about" id="navAbout">À propos</a></li>
             <li><a href="#services" id="navServices">Services</a></li>
             <li><a href="#realisations" id="navRealisations">Réalisations</a></li>
             <li><a href="#solutions" id="navSolutions">Solutions</a></li>
             <li><a href="#contact" id="navContact">Contact</a></li>
+
+            <li class="mobile-only">
+                <a href="https://wa.me/32466127866?text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20web%20pour%20mon%20activit%C3%A9." target="_blank" id="navDevisMobile">
+                    Demander un devis
+                </a>
+            </li>
         </ul>
 
         <div class="language-switcher">
@@ -28,6 +34,8 @@
             <button onclick="setLanguage('en')">EN</button>
             <button onclick="setLanguage('nl')">NL</button>
         </div>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
 
         <a class="nav-btn" id="navDevis" href="https://wa.me/32466127866?text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20web%20pour%20mon%20activit%C3%A9." target="_blank">
             Demander un devis
