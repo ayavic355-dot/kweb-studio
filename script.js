@@ -339,3 +339,35 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+const chatButton = document.getElementById("chatButton");
+const chatBox = document.getElementById("chatBox");
+const closeChat = document.getElementById("closeChat");
+const chatForm = document.getElementById("chatForm");
+
+if (chatButton && chatBox && closeChat && chatForm) {
+    chatButton.addEventListener("click", () => {
+        chatBox.classList.toggle("active");
+    });
+
+    closeChat.addEventListener("click", () => {
+        chatBox.classList.remove("active");
+    });
+
+    chatForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("clientName").value;
+        const activity = document.getElementById("clientActivity").value;
+        const siteType = document.getElementById("siteType").value;
+        const message = document.getElementById("clientMessage").value;
+
+        const whatsappMessage =
+            `Bonjour KWeb Studio,%0A%0A` +
+            `Nom : ${encodeURIComponent(name)}%0A` +
+            `Activité : ${encodeURIComponent(activity)}%0A` +
+            `Type de site : ${encodeURIComponent(siteType)}%0A%0A` +
+            `Message : ${encodeURIComponent(message)}`;
+
+        window.open(`https://wa.me/32466127866?text=${whatsappMessage}`, "_blank");
+    });
+}
