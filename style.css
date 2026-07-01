@@ -121,7 +121,7 @@ nav ul li a:hover {
     min-height: 100vh;
     background-image:
         linear-gradient(to right, rgba(5, 8, 22, 0.95), rgba(5, 8, 22, 0.35)),
-        url("images/space-bg.jpg");
+        url("space-bg.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
